@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/bgrect">
+
+    </FrameLayout>
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:src="@drawable/p"
+        android:layout_margin="20dp"
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="false"
+            android:padding="70dp"
+            android:orientation="vertical">
+
+            <EditText
+            android:id="@+id/name"
+                android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rect1"
+            android:drawablePadding="16dp"
+            android:hint="Name:"
+            android:paddingLeft="20dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"></EditText>
+            <EditText
+                android:id="@+id/family"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rect1"
+                android:drawablePadding="16dp"
+                android:hint="Family:"
+                android:paddingLeft="20dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"></EditText>
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rect1"
+                android:drawablePadding="16dp"
+                android:hint="Age:"
+                android:inputType="number"
+                android:paddingLeft="20dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"></EditText>
+
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rect1"
+                android:drawablePadding="16dp"
+                android:hint="Email:"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="20dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+
+                ></EditText>
+
+            <EditText
+                android:id="@+id/number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rect1"
+                android:drawablePadding="16dp"
+                android:hint="Phone:"
+                android:inputType="phone"
+                android:paddingLeft="20dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"></EditText>
+        </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="40dp"
+        android:layout_centerInParent="true">
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Send"
+            android:textSize="15sp"
+            android:textColor="#ffffff"
+            android:background="#410187"
+            android:layout_margin="40dp"
+            android:paddingTop="2dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>
