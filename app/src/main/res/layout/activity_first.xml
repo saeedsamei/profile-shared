@@ -8,6 +8,8 @@
     android:layout_gravity="center"
     android:orientation="vertical"
     android:gravity="center">
+
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -16,104 +18,125 @@
         android:layout_marginStart="0dp"
         android:layout_marginTop="0dp"
         android:background="@drawable/bgrect">
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/p"
-        android:layout_margin="40dp"
-        />
-    <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="#c9c8c8"
-        android:layout_margin="15dp"
-        android:layout_gravity="center"
-        >
 
-        <TextView
-
-            android:id="@+id/name"
+        <TableLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/rect1"
-            android:drawablePadding="16dp"
-            android:gravity="center"
-            android:textSize="20sp"
-            android:textStyle="italic"
-            android:text=""
-            android:paddingLeft="20dp"
-            android:paddingTop="16dp"
-            android:paddingBottom="16dp"
-            android:textColor="#000000"></TextView>
+            android:layout_gravity="top"
+            android:layout_margin="10dp"
+            android:background="#c9c8c8"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
 
-        <TextView
-            android:id="@+id/family"
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rect1"
+                android:drawablePadding="16dp"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="italic"></TextView>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/family"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rect1"
+                android:drawablePadding="16dp"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rect1"
+                android:drawablePadding="16dp"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="italic"></TextView>
+
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rect1"
+                android:drawablePadding="16dp"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rect1"
+                android:drawablePadding="16dp"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="italic"></TextView>
+        </TableLayout>
+
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/rect1"
-            android:drawablePadding="16dp"
-            android:gravity="center"
-            android:textSize="20sp"
-            android:textStyle="italic"
-            android:text=""
-            android:paddingLeft="20dp"
-            android:paddingTop="16dp"
-            android:paddingBottom="16dp"
-            android:textColor="#000000"></TextView>
-        <TextView
-            android:id="@+id/age"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/rect1"
-            android:drawablePadding="16dp"
-            android:gravity="center"
-            android:textSize="20sp"
-            android:textStyle="italic"
-            android:text=""
-            android:paddingLeft="20dp"
-            android:paddingTop="16dp"
-            android:paddingBottom="16dp"
-            android:textColor="#000000"></TextView>
+            android:layout_centerInParent="true"
+            android:padding="50dp">
 
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="40dp"
+                android:background="#410187"
+                android:paddingTop="2dp"
+                android:text="Save"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+        </RelativeLayout>
+    </FrameLayout>
 
-        <TextView
-            android:id="@+id/email"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/rect1"
-            android:drawablePadding="16dp"
-            android:gravity="center"
-            android:textSize="20sp"
-            android:textStyle="italic"
-            android:text=""
-            android:paddingLeft="20dp"
-            android:paddingTop="16dp"
-            android:paddingBottom="16dp"
-            android:textColor="#000000"></TextView>
-
-        <TextView
-            android:id="@+id/number"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/rect1"
-            android:drawablePadding="16dp"
-            android:gravity="center"
-            android:textSize="20sp"
-            android:textStyle="italic"
-            android:text=""
-            android:paddingLeft="20dp"
-            android:paddingTop="16dp"
-            android:paddingBottom="16dp"
-            android:textColor="#000000"></TextView>
-    </TableLayout>
-
-
-
-</FrameLayout>
 </LinearLayout>

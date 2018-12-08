@@ -1,6 +1,7 @@
 package com.example.saeed.profile;
 
 import android.content.Intent;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -35,10 +36,25 @@ public class FirstActivity extends AppCompatActivity {
         txtemail.setText(e);
         txtnumber.setText(p);
 
+        Button btnSave = findViewById(R.id.btnSave);
+        btnSave.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent returnintent= new Intent();
+                returnintent.putExtra("result","information save.");
+                setResult(MainActivity.RESULT_OK,returnintent);
+                finish();
+            }
+        });
+
 
 
 
     }
-}
+
+
+    }
+
+
 
 
